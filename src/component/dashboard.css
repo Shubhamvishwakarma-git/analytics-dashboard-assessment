@@ -1,0 +1,228 @@
+/* Apply Roboto globally */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Dashboard container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa; /* Neutral light background color */
+}
+
+/* Filter Section */
+.filter-container {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Cards */
+.card {
+    background-color: #ffffff; /* Light card background */
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    transition: transform 0.2s;
+    height: 100%; /* Ensures cards are same height */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #343a40;
+}
+
+.card-text {
+    font-size: 1.5rem;
+    color: #495057;
+}
+
+/* Card body */
+.card-body {
+    padding: 2rem;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 30px;
+}
+
+h2, h3 {
+    font-weight: 600;
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Filter container */
+.filters {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Filter items */
+.filter-item {
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* Chart container */
+.chart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Adjust the size of charts globally */
+.chart-container canvas {
+    width: 100% !important;  /* Make the canvas full-width */
+    height: 150px !important; /* Default height for all charts */
+}
+
+/* Pie Chart specific size control */
+.chart-container .pie-chart canvas {
+    height: 75px !important;  /* Default height for Pie chart */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        padding: 15px;
+    }
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    /* Reduce Pie chart size for large screens */
+    .chart-container .pie-chart canvas {
+        height: 60px !important; /* Further reduce Pie chart for large screens */
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .card-title {
+        font-size: 1.125rem;
+    }
+    .card-text {
+        font-size: 1.75rem;
+    }
+
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .chart-container canvas {
+        height: 180px !important;
+    }
+
+    /* Adjust Pie chart size for medium screens */
+    .chart-container .pie-chart canvas {
+        height: 50px !important; /* Reduce Pie chart for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+    .card-title {
+        font-size: 1rem;
+    }
+    .card-text {
+        font-size: 1.5rem;
+    }
+
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .container {
+        padding: 10px;
+    }
+    .card-body {
+        padding: 1rem;
+    }
+
+    .chart-container canvas {
+        height: 150px !important;
+    }
+
+    /* Adjust Pie chart size for smaller screens */
+    .chart-container .pie-chart canvas {
+        height: 40px !important; /* Even smaller Pie chart on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .filter-container {
+        padding: 15px;
+    }
+    .card-body {
+        padding: 0.5rem;
+    }
+
+    .chart-container canvas {
+        height: 120px !important;
+    }
+
+    .chart-container .pie-chart canvas {
+        height: 30px !important; /* Smallest Pie chart on very small screens */
+    }
+}
+
+/* Global Chart Container */
+.charts-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.chart-card {
+    margin-bottom: 30px;
+}
+
+/* Control Pie Chart Size */
+.chart-container .pie-chart canvas {
+    height: 50px !important; 
+    width: 50% !important; /* Ensure the Pie chart fills the container width */
+}
+
+/* Adjust chart size based on screen size (Responsive) */
+@media (max-width: 1200px) {
+    .chart-container .pie-chart canvas {
+        height: 60px !important; /* Smaller Pie chart on large screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .chart-container .pie-chart canvas {
+        height: 100px !important; /* Smaller Pie chart on medium screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .chart-container .pie-chart canvas {
+        height: 80px !important; /* Smallest Pie chart on small screens */
+    }
+}

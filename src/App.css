@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  scroll-behavior: smooth;
+  --primary: #4154f1;
+  --second: #717ff5;
+  --bgColor: #f6f9ff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #444444;
+    background: var(--bgColor);
+}
+
+a{
+    color: var(--primary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    color: var(--second);
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Nunito', sans-serif;
+}
+.dropdown-menu{
+    border-radius: 4px;
+    padding: 10px 0;
+    -webkit-animation-name: dropdown-animate;
+    animation-name: dropdown-animate;
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s ;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    border: 0;
+    box-shadow: 0 5px 30px 0 rgba(82, 63, 105, 0.2);
+}
+
+.dropdown-menu  .dropdown-header,
+.dropdown-menu .dropdown-footer{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 25px;
+}
+.dropdown-menu .dropdown-footer a{
+    color: #444444;
+    text-decoration: underline;
+}
+.dropdown-menu .dropdown-footer a:hover{
+    text-decoration: none;
+}
+.dropdown-menu .dropdown-divider{
+    color: #a5c5fe;
+    margin: 0;
+}
+.dropdown-menu .dropdown-item{
+    font-size: 14px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+.dropdown-menu .dropdown-item i{
+    margin-right: 10px;
+    font-size: 18px;
+    line-height: 0;
+}
+.dropdown-menu .dropdown-item:hover{
+    background-color: #f6f9ff;
+}
+@media(min-width: 768px){
+    .dropdown-menu-arrow::before{
+        content: "";
+        width: 13px;
+        height: 13px;
+        background: #fff;
+        position: absolute;
+        top: -7px;
+        right: 20px;
+        transform: rotate(45deg);
+        border-top: 1px solid #eaedf1;
+        border-left: 1px solid #eaedf1;
+    }
+}
+
+@-webkit-keyframes dropdown-animate {
+    0% {
+        opacity: 0;
+    }
+
+    100%  {
+        opacity: 1;
+    }
+    0%{
+        opacity: 0;
+    }
+}
+
+@keyframes dropdown-animate{
+    0% {
+        opacity: 0;
+    }
+    100%  {
+        opacity: 1;
+    }
+    0%{
+        opacity: 0;
+    }
+} */
+
+/* Apply Roboto globally */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #444444;
+    background: #f6f9ff; /* Background color */
+}
+
+/* Links styling */
+a {
+    color: var(--primary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--second);
+    text-decoration: none;
+}
+
+/* Header styling */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    border-radius: 4px;
+    padding: 10px 0;
+    animation: dropdown-animate 0.2s both;
+    border: 0;
+    box-shadow: 0 5px 30px rgba(82, 63, 105, 0.2);
+}
+
+.dropdown-menu .dropdown-header,
+.dropdown-menu .dropdown-footer {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 25px;
+}
+
+.dropdown-menu .dropdown-footer a {
+    color: #444444;
+    text-decoration: underline;
+}
+
+.dropdown-menu .dropdown-item {
+    font-size: 14px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f6f9ff;
+}
+
+/* Main container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f6f9ff;
+}
+
+/* Card styles */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #343a40;
+}
+
+.card-text {
+    font-size: 1.5rem;
+    color: #495057;
+}
+
+/* Card body */
+.card-body {
+    padding: 2rem;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 30px;
+}
+
+h2, h3 {
+    font-weight: 600;
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Filter section */
+.filters {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Filter item styles */
+.filter-item {
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* Chart container for pie charts */
+.chart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Specific adjustments for Pie chart container */
+.chart-container .pie-chart {
+    width: 50% !important; /* Set width to 50% */
+    margin: 0 auto;        /* Center the Pie chart */
+    display: block;        /* Ensure it's block level for sizing */
+}
+
+/* Responsive size adjustments for Pie chart */
+.chart-container .pie-chart canvas {
+    width: 100% !important;  /* Full width within container */
+    height: 200px !important; /* Fixed height of the Pie chart */
+}
+
+/* Adjust Pie chart size on medium screens */
+@media (max-width: 992px) {
+    .chart-container .pie-chart canvas {
+        height: 180px !important; /* Smaller height on medium screens */
+    }
+}
+
+/* Adjust Pie chart size on smaller screens */
+@media (max-width: 768px) {
+    .chart-container .pie-chart canvas {
+        height: 150px !important; /* Even smaller on small screens */
+    }
+}
+
+/* Further reduction for very small screens */
+@media (max-width: 576px) {
+    .chart-container .pie-chart canvas {
+        height: 120px !important; /* Smallest Pie chart size */
+    }
+}
+
+/* Adjust font size for medium screens */
+@media (max-width: 1200px) {
+    .container {
+        padding: 15px;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+}
+
+/* Adjust typography for medium screens */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.125rem;
+    }
+
+    .card-text {
+        font-size: 1.75rem;
+    }
+
+    /* Stack the cards in 2 columns */
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .chart-container canvas {
+        height: 180px !important;
+    }
+
+    .chart-container .pie-chart canvas {
+        height: 130px !important;
+    }
+}
+
+/* Adjust typography for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 1.5rem;
+    }
+
+    /* Stack the cards in 1 column */
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Adjust padding on smaller screens */
+    .container {
+        padding: 10px;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .chart-container canvas {
+        height: 150px !important;
+    }
+
+    .chart-container .pie-chart canvas {
+        height: 120px !important;
+    }
+}
+
+/* Make the filter section smaller on very small screens */
+@media (max-width: 576px) {
+    .filter-container {
+        padding: 15px;
+    }
+
+    .card-body {
+        padding: 0.5rem;
+    }
+
+    .chart-container canvas {
+        height: 120px !important;
+    }
+
+    .chart-container .pie-chart canvas {
+        height: 100px !important;
+    }
+}
