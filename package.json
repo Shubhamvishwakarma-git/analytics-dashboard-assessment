@@ -3,7 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Shubhamvishwakarma-git.github.io/analytics-dashboard-assessment",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",

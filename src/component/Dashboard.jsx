@@ -11,7 +11,7 @@ const Dashboard = () => {
   const [filters, setFilters] = useState({ city: "All", make: "All" });
 
   useEffect(() => {
-    Papa.parse("data/Electric_Vehicle_Population_Data.csv", {
+    Papa.parse("/analytics-dashboard-assessment/data/Electric_Vehicle_Population_Data.csv", {
       download: true,
       header: true,
       complete: (result) => {
